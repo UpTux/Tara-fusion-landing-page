@@ -13,8 +13,8 @@ const Showcase: React.FC = () => {
         </div>
         <div className="mt-16">
           <ThemeCompare
-            lightImage="https://picsum.photos/seed/lightmode/1280/720"
-            darkImage="https://picsum.photos/seed/darkmode/1280/720"
+            lightImage="/assets/Light-mode.png"
+            darkImage="/assets/Dark-mode.png"
           />
         </div>
          <p className="text-center mt-4 text-sm text-gray-500">
