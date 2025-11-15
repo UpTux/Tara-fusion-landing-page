@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tara-Fusion | Next-Generation Automotive TARA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module">
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-dark': '#0a0a1a',
+              'brand-glass': 'rgba(10, 10, 26, 0.5)',
+              'brand-accent': '#00f6ff',
+              'brand-accent-dark': '#00c5cc',
+              'brand-purple': '#8A2BE2',
+            },
+            boxShadow: {
+              'glow': '0 0 15px 0 rgba(0, 246, 255, 0.5), 0 0 25px 0 rgba(0, 246, 255, 0.3)',
+              'glow-sm': '0 0 8px 0 rgba(0, 246, 255, 0.3)',
+            },
+            animation: {
+              'aurora': 'aurora 60s linear infinite',
+              'fill-progress': 'fill-progress 7s linear forwards',
+            },
+            keyframes: {
+              aurora: {
+                from: {
+                  backgroundPosition: '0% 50%',
+                },
+                to: {
+                  backgroundPosition: '200% 50%',
+                },
+              },
+              'fill-progress': {
+                from: { transform: 'scaleX(0)' },
+                to: { transform: 'scaleX(1)' },
+              }
+            },
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        background-color: #0a0a1a;
+        color: #e5e7eb;
+      }
+      .glass-card {
+        background: rgba(23, 23, 43, 0.6);
+        -webkit-backdrop-filter: blur(12px);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 8px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-track {
+        background: #1e1e33;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background-color: #00f6ff;
+        border-radius: 10px;
+        border: 2px solid #1e1e33;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/"
+  }
+}
+</script>
+</head>
+  <body class="custom-scrollbar">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
