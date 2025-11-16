@@ -66,8 +66,8 @@ const ThemeCompare: React.FC<ThemeCompareProps> = ({ lightImage, darkImage }) =>
           </svg>
         </div>
       </div>
-       <div className="absolute top-4 left-4 px-3 py-1 bg-black/50 rounded-full text-sm font-semibold">Light Mode</div>
-       <div className="absolute top-4 right-4 px-3 py-1 bg-black/50 rounded-full text-sm font-semibold" style={{ opacity: sliderPosition > 50 ? 1 : 0, transition: 'opacity 0.3s' }}>Dark Mode</div>
+       <div className="absolute top-4 right-4 px-3 py-1 bg-black/50 rounded-full text-sm font-semibold"style={{ opacity: sliderPosition < 50 ? 1 : 0, transition: 'opacity 0.3s' }}>Light Mode</div>
+       <div className="absolute top-4 left-4 px-3 py-1 bg-black/50 rounded-full text-sm font-semibold" style={{ opacity: sliderPosition > 50 ? 1 : 0, transition: 'opacity 0.3s' }}>Dark Mode</div>
     </div>
   );
 };
