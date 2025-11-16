@@ -11,25 +11,25 @@ const workflowSteps = [
     id: 1,
     title: 'Identify Assets & Threats',
     description: 'Capture relevant system elements, assets, threat scenarios, and potential attack vectors in our intuitive modeling canvas.',
-    image: 'https://picsum.photos/seed/workflow1/1280/800',
+    image: '/assets/Thread-and-Risks.png',
   },
   {
     id: 2,
     title: 'Evaluate Attack Feasibility',
     description: 'Analyze attack probabilities, exposure, required capabilities, and attack paths with guided, structured inputs.',
-    image: 'https://picsum.photos/seed/workflow2/1280/800',
+    image: '/assets/Dark-mode.png',
   },
   {
     id: 3,
     title: 'Determine Impact & Risk',
     description: 'Automatically calculate impact levels, Risk Priority Numbers (RPN), and security classes to prioritize critical areas.',
-    image: 'https://picsum.photos/seed/workflow3/1280/800',
+    image: '/assets/attack-leaves.png',
   },
   {
     id: 4,
     title: 'Define Controls & Mitigations',
     description: 'Derive security goals and map cybersecurity controls and mitigation strategies from our extensive automotive-specific database.',
-    image: 'https://picsum.photos/seed/workflow4/1280/800',
+    image: '/assets/Tara-Validation.png',
   },
 ];
 

@@ -25,19 +25,19 @@ const galleryItems = [
   {
     id: 1,
     title: "Threat Modeling Canvas",
-    src: "https://picsum.photos/seed/gallery1/1280/720",
+    src: "/assets/Threads.png",
     alt: "Screenshot of the Threat Modeling Canvas in Tara-Fusion",
   },
   {
     id: 2,
     title: "Risk Assessment Dashboard",
-    src: "https://picsum.photos/seed/gallery2/1280/720",
+    src: "/assets/Risks.png",
     alt: "Screenshot of the Risk Assessment Dashboard",
   },
   {
     id: 3,
     title: "Detailed Report View",
-    src: "https://picsum.photos/seed/gallery3/1280/720",
+    src: "/assets/project-summary.png",
     alt: "Screenshot of a generated report",
   },
 ];
@@ -63,7 +63,7 @@ const Gallery: React.FC = () => {
           ))}
         </div>
         <p className="text-center mt-8 text-sm text-gray-500">
-           Note: These are placeholder images. The real product screenshots will be added here.
+           Note: Images are for illustrative purposes only and may not reflect the final product.
         </p>
       </div>
     </section>
