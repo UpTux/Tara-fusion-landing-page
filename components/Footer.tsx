@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 const Footer: React.FC = () => {
   return (
@@ -7,7 +8,7 @@ const Footer: React.FC = () => {
         <p>&copy; {new Date().getFullYear()} UpTux. All rights reserved.</p>
         <div className="mt-4 flex justify-center space-x-6">
           <a href="#" className="hover:text-brand-accent transition-colors">Privacy Policy</a>
-          <a href="/impressum" className="hover:text-brand-accent transition-colors">Impressum</a>
+          <Link href="/impressum" className="hover:text-brand-accent transition-colors">Impressum</Link>
         </div>
       </div>
     </footer>

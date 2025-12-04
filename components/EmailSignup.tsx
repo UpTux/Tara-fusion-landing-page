@@ -1,5 +1,6 @@
+'use client';
+
 import React, { useState, FormEvent } from 'react';
-import { subscribeEmail } from '../utils/api';
 
 type Status = 'idle' | 'loading' | 'success' | 'error';
 
@@ -20,9 +21,22 @@ const EmailSignup: React.FC = () => {
     setMessage('');
 
     try {
-      await subscribeEmail(email);
+      const response = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Something went wrong. Please try again.');
+      }
+
       setStatus('success');
-      setMessage("Thanks for your interest! We'll notify you at launch.");
+      setMessage(data.message || "Thanks for your interest! We'll notify you at launch.");
       setEmail('');
     } catch (error: any) {
       setStatus('error');
