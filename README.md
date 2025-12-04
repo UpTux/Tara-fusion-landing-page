@@ -104,7 +104,7 @@ Diese Landing Page wurde mit modernsten Web-Technologien entwickelt, um TARA Fus
    
    Fügen Sie Ihren Gemini API Key hinzu (falls erforderlich):
    ```
-   GEMINI_API_KEY=your_api_key_here
+   NEXT_PUBLIC_MAILERLITE_API_TOKEN=your_api_token_here
    ```
 
 4. **Entwicklungsserver starten:**
@@ -166,9 +166,9 @@ Wir freuen uns über Beiträge zur Verbesserung der Landing Page! Bitte beachten
 4. Pushen Sie zum Branch (`git push origin feature/AmazingFeature`)
 5. Öffnen Sie einen Pull Request
 
-## 📝 Lizenz
+## 📝 License
 
-Dieses Projekt ist proprietär. Alle Rechte vorbehalten.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 📧 Kontakt
 
