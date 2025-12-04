@@ -14,7 +14,7 @@ const ParallaxCard: React.FC<ParallaxCardProps> = ({ src, alt, title }) => {
     <div className="w-full">
       <h3 className="text-2xl font-bold mb-4 text-center">{title}</h3>
       <div className="aspect-video bg-white/5 rounded-lg border border-white/10 overflow-hidden shadow-2xl">
-        <img src={src} alt={alt} className="w-full h-full object-cover" />
+        <img src={src} alt={alt} className="w-full h-full object-fit" />
       </div>
     </div>
   );

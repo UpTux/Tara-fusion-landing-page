@@ -51,9 +51,9 @@ const ThemeCompare: React.FC<ThemeCompareProps> = ({ lightImage, darkImage }) =>
       onTouchEnd={handleMouseUp}
       onTouchMove={handleTouchMove}
     >
-      <img src={lightImage} alt="Tara-Fusion Light Mode" className="absolute inset-0 w-full h-full object-cover object-left" draggable="false" />
+      <img src={lightImage} alt="Tara-Fusion Light Mode" className="absolute inset-0 w-full h-full object-fit object-left" draggable="false" />
       <div className="absolute inset-0 w-full h-full overflow-hidden" style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}>
-        <img src={darkImage} alt="Tara-Fusion Dark Mode" className="absolute inset-0 w-full h-full object-cover object-left" draggable="false" />
+        <img src={darkImage} alt="Tara-Fusion Dark Mode" className="absolute inset-0 w-full h-full object-fit object-left" draggable="false" />
       </div>
       <div
         className="absolute top-0 bottom-0 w-1 bg-brand-accent cursor-ew-resize"
