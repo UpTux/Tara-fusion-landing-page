@@ -33,6 +33,12 @@ const workflowSteps = [
     description: 'Derive security goals and map cybersecurity controls and mitigation strategies from our extensive automotive-specific database.',
     image: '/assets/Tara-Validation.png',
   },
+  {
+    id: 5,
+    title: 'Export to sphinx-needs',
+    description: 'Export your findings to sphinx-needs for seamless integration into your documentation.',
+    image: '/assets/sphinx-needs-export.png',
+  },
 ];
 
 const AUTO_ROTATE_INTERVAL = 7000; // 7 seconds

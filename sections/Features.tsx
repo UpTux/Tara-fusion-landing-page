@@ -32,7 +32,7 @@ const features = [
   {
     icon: <FileTextIcon className="w-8 h-8 text-brand-accent" />,
     title: 'Report Generation & Export',
-    description: 'Instantly generate professional, compliant TARA reports in various formats for stakeholders and auditors.',
+    description: 'Generate professional TARA reports in multiple formats, including sphinx-needs export for seamless requirements management and documentation.',
   },
   {
     icon: <UsersIcon className="w-8 h-8 text-brand-accent" />,
