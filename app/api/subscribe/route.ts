@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-const MAILERLITE_API_TOKEN = process.env.MAILERLITE_API_TOKEN;
+const MAILERLITE_API_TOKEN = process.env.NEXT_PUBLIC_MAILERLITE_API_TOKEN;
 const MAILERLITE_API_URL = 'https://connect.mailerlite.com/api/subscribers';
 
 export async function POST(request: NextRequest) {
