@@ -1,76 +1,77 @@
 # GitHub Pages Deployment Setup
 
-Diese Anleitung beschreibt, wie du GitHub Pages für dieses Projekt einrichtest.
+This guide describes how to set up GitHub Pages for this project.
 
-## Voraussetzungen
+## Prerequisites
 
-1. Das Repository muss auf GitHub gehostet sein
-2. Der `NEXT_PUBLIC_MAILERLITE_API_TOKEN` muss als Repository Secret angelegt sein
+1. The repository must be hosted on GitHub
+2. The `NEXT_PUBLIC_MAILERLITE_API_TOKEN` must be set up as a repository secret
 
-## Einrichtung
+## Setup
 
-### 1. Repository Secret einrichten
+### 1. Configure Repository Secret
 
-Du hast bereits den `NEXT_PUBLIC_MAILERLITE_API_TOKEN` als Secret angelegt. ✅
+You have already set up the `NEXT_PUBLIC_MAILERLITE_API_TOKEN` as a secret. ✅
 
-### 2. GitHub Pages aktivieren
+### 2. Enable GitHub Pages
 
-1. Gehe zu deinem Repository auf GitHub
-2. Klicke auf **Settings** (Einstellungen)
-3. Navigiere zu **Pages** im linken Menü
-4. Unter **Source** (Quelle):
-   - Wähle **GitHub Actions** aus dem Dropdown-Menü
+1. Go to your repository on GitHub
+2. Click on **Settings**
+3. Navigate to **Pages** in the left menu
+4. Under **Source**:
+   - Select **GitHub Actions** from the dropdown menu
    
-Das war's! Die Konfiguration ist abgeschlossen.
+That's it! The configuration is complete.
 
-### 3. Deployment auslösen
+### 3. Trigger Deployment
 
-Die Pipeline wird automatisch ausgelöst bei:
-- Jedem Push auf den `main` Branch
-- Manuell über den "Actions" Tab → "Deploy Next.js to GitHub Pages" → "Run workflow"
+The pipeline is automatically triggered on:
+- Every push to the `main` branch
+- Manually via the "Actions" tab → "Deploy Next.js to GitHub Pages" → "Run workflow"
 
-## Nach dem ersten Deployment
+## After the First Deployment
 
-Nach dem ersten erfolgreichen Deployment ist deine Website verfügbar unter:
+After the first successful deployment, your website will be available at:
 
 ```
 https://tara-fusion.com/
 ```
 
-Die Custom Domain ist bereits konfiguriert durch die `CNAME` Datei im `public/` Verzeichnis.
+The custom domain is already configured through the `CNAME` file in the `public/` directory.
 
-## Lokales Testen
+## Local Testing
 
-Um die Produktions-Build lokal zu testen:
+To test the production build locally:
 
 ```bash
 npm run build
 npx serve out
 ```
 
-## Wichtige Dateien
+## Important Files
 
-- `.github/workflows/deploy.yml` - GitHub Actions Pipeline
-- `next.config.ts` - Next.js Konfiguration mit basePath für GitHub Pages
-- `public/.nojekyll` - Verhindert Jekyll-Verarbeitung auf GitHub Pages
+- `.github/workflows/deploy.yml` - GitHub Actions pipeline
+- `next.config.ts` - Next.js configuration for GitHub Pages
+- `public/.nojekyll` - Prevents Jekyll processing on GitHub Pages
+- `public/CNAME` - Custom domain configuration
 
 ## Troubleshooting
 
-### Custom Domain funktioniert nicht
+### Custom Domain Not Working
 
-Stelle sicher, dass:
-1. Die `CNAME` Datei im `public/` Verzeichnis existiert und `tara-fusion.com` enthält
-2. Die DNS-Einstellungen deiner Domain korrekt auf GitHub Pages zeigen
-3. In den GitHub Repository Settings unter "Pages" die Custom Domain konfiguriert ist
+Make sure that:
+1. The `CNAME` file exists in the `public/` directory and contains `tara-fusion.com`
+2. Your domain's DNS settings correctly point to GitHub Pages
+3. The custom domain is configured in the GitHub repository settings under "Pages"
 
-### Workflow schlägt fehl
+### Workflow Fails
 
-1. Überprüfe, ob der `NEXT_PUBLIC_MAILERLITE_API_TOKEN` Secret korrekt gesetzt ist
-2. Stelle sicher, dass GitHub Pages in den Repository-Einstellungen aktiviert ist
-3. Überprüfe die Logs im "Actions" Tab
+1. Check if the `NEXT_PUBLIC_MAILERLITE_API_TOKEN` secret is set correctly
+2. Ensure GitHub Pages is enabled in the repository settings
+3. Check the logs in the "Actions" tab
 
-### 404 Fehler nach Deployment
+### 404 Error After Deployment
 
-- Warte 1-2 Minuten nach dem Deployment
-- Leere den Browser-Cache
-- Überprüfe, ob die Custom Domain korrekt konfiguriert ist
+- Wait 1-2 minutes after deployment
+- Clear your browser cache
+- Verify that the custom domain is configured correctly

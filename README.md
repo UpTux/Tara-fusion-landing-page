@@ -5,126 +5,126 @@
 ![React](https://img.shields.io/badge/React-19.2-blue)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.8-blue)
 
-Willkommen zur offiziellen Landing Page von **TARA Fusion** – einem innovativen, webbasierten Tool für die Durchführung von Bedrohungsanalysen und Risikobewertungen (Threat Analysis and Risk Assessment) für sicherheitskritische Systeme.
+Welcome to the official landing page of **TARA Fusion** – an innovative, web-based tool for conducting Threat Analysis and Risk Assessment (TARA) for security-critical systems.
 
-## 🎯 Über TARA Fusion
+## 🎯 About TARA Fusion
 
-TARA Fusion ist eine umfassende Plattform, die den Sicherheitsbewertungsprozess für komplexe Systeme revolutioniert. Durch die Kombination von intuitiver Benutzeroberfläche, leistungsstarken Analysewerkzeugen und kollaborativen Funktionen ermöglicht TARA Fusion Sicherheitsexperten, Bedrohungen systematisch zu identifizieren, zu bewerten und zu mitigieren.
+TARA Fusion is a comprehensive platform that revolutionizes the security assessment process for complex systems. By combining an intuitive user interface, powerful analysis tools, and collaborative features, TARA Fusion enables security experts to systematically identify, assess, and mitigate threats.
 
-### 🚀 Hauptfunktionen
+### 🚀 Key Features
 
-#### ✅ Visueller Attack Tree Editor
-Erstellen und visualisieren Sie Angriffspfade mit einer intuitiven grafischen Oberfläche. Der Attack Tree Editor ermöglicht es Ihnen:
-- Komplexe Angriffsszenarien visuell darzustellen
-- Angriffsvektoren hierarchisch zu strukturieren
-- Abhängigkeiten zwischen Angriffsschritten zu modellieren
-- Interaktive Analysen durchzuführen
+#### ✅ Visual Attack Tree Editor
+Create and visualize attack paths with an intuitive graphical interface. The Attack Tree Editor allows you to:
+- Visually represent complex attack scenarios
+- Structure attack vectors hierarchically
+- Model dependencies between attack steps
+- Perform interactive analyses
 
-#### 🤖 Threat Generation (GEPLANT)
-Nutzen Sie die Kraft der künstlichen Intelligenz zur Entdeckung potenzieller Bedrohungen:
-- **Lokale KI-Integration** – Alle KI-Funktionen laufen ausschließlich lokal für maximale Datensicherheit
-- Automatische Identifikation von Bedrohungsszenarien
-- Intelligente Vorschläge für Angriffsvektoren
-- Kontextbasierte Risikoanalyse
+#### 🤖 Threat Generation (PLANNED)
+Leverage the power of artificial intelligence to discover potential threats:
+- **Local AI Integration** – All AI functions run exclusively locally for maximum data security
+- Automatic identification of threat scenarios
+- Intelligent suggestions for attack vectors
+- Context-based risk analysis
 
-#### 📊 Umfassendes Risikomanagement
-Verwalten Sie alle Aspekte Ihrer Sicherheitsbewertung an einem Ort:
-- **Bedrohungsverfolgung** – Dokumentieren und priorisieren Sie identifizierte Bedrohungen
-- **Asset-Management** – Erfassen Sie alle schützenswerten Ressourcen
-- **Schadensszenarien** – Bewerten Sie potenzielle Auswirkungen
-- **Mitigationsstrategien** – Planen und verfolgen Sie Gegenmaßnahmen
+#### 📊 Comprehensive Risk Management
+Manage all aspects of your security assessment in one place:
+- **Threat Tracking** – Document and prioritize identified threats
+- **Asset Management** – Capture all resources worth protecting
+- **Damage Scenarios** – Assess potential impacts
+- **Mitigation Strategies** – Plan and track countermeasures
 
 #### 👥 Multi-User Collaboration
-Arbeiten Sie effizient im Team:
-- Rollenbasierte Zugriffskontrolle (RBAC)
-- Team- und Organisationsverwaltung
-- Gemeinsame Bearbeitung von TARA-Projekten
-- Versionskontrolle und Änderungsverfolgung
+Work efficiently as a team:
+- Role-based access control (RBAC)
+- Team and organization management
+- Collaborative editing of TARA projects
+- Version control and change tracking
 
-#### 📄 Dokumentations-Export
-Nahtlose Integration in Ihre technische Dokumentation:
-- Export im **sphinx-needs** kompatiblen Format
-- Automatische Generierung von Sicherheitsdokumentationen
-- Integration in bestehende Dokumentationssysteme
-- Nachvollziehbare Audit-Trails
+#### 📄 Documentation Export
+Seamless integration into your technical documentation:
+- Export in **sphinx-needs** compatible format
+- Automatic generation of security documentation
+- Integration into existing documentation systems
+- Traceable audit trails
 
 #### 📚 Threat Catalog Management
-Bauen Sie wiederverwendbare Wissensdatenbanken auf:
-- Erstellen und pflegen Sie Bedrohungskataloge
-- Teilen Sie Best Practices innerhalb Ihrer Organisation
-- Nutzen Sie vordefinierte Threat-Templates
-- Kontinuierliche Erweiterung der Wissensbasis
+Build reusable knowledge databases:
+- Create and maintain threat catalogs
+- Share best practices within your organization
+- Use predefined threat templates
+- Continuous expansion of the knowledge base
 
-## 🌐 Über diese Landing Page
+## 🌐 About This Landing Page
 
-Diese Landing Page wurde mit modernsten Web-Technologien entwickelt, um TARA Fusion optimal zu präsentieren:
+This landing page was developed using cutting-edge web technologies to optimally present TARA Fusion:
 
-### Technologie-Stack
+### Technology Stack
 
-- **Framework:** Next.js 15.1 mit Static Site Generation (SSG)
+- **Framework:** Next.js 15.1 with Static Site Generation (SSG)
 - **UI Library:** React 19.2
-- **Sprache:** TypeScript 5.8
+- **Language:** TypeScript 5.8
 - **Styling:** Tailwind CSS 3.4
 - **Deployment:** GitHub Pages
 
-### Features der Landing Page
+### Landing Page Features
 
-- 🎨 **Modernes, responsives Design** – Optimiert für alle Geräte
-- ⚡ **Optimale Performance** – Durch SSG und moderne Build-Optimierungen
-- 🔍 **SEO-optimiert** – Für maximale Sichtbarkeit
-- ♿ **Barrierefrei** – Nach WCAG-Richtlinien
-- 🌙 **Dark/Light Mode** – Benutzerfreundliche Theme-Unterstützung
+- 🎨 **Modern, Responsive Design** – Optimized for all devices
+- ⚡ **Optimal Performance** – Through SSG and modern build optimizations
+- 🔍 **SEO-Optimized** – For maximum visibility
+- ♿ **Accessible** – Following WCAG guidelines
+- 🌙 **Dark/Light Mode** – User-friendly theme support
 
-## 🛠️ Lokale Entwicklung
+## 🛠️ Local Development
 
-### Voraussetzungen
+### Prerequisites
 
-- **Node.js** (Version 18.x oder höher)
-- **npm** oder **yarn**
+- **Node.js** (Version 18.x or higher)
+- **npm** or **yarn**
 
 ### Installation
 
-1. **Repository klonen:**
+1. **Clone the repository:**
    ```bash
    git clone <repository-url>
    cd Tara-fusion-landing-page
    ```
 
-2. **Abhängigkeiten installieren:**
+2. **Install dependencies:**
    ```bash
    npm install
    ```
 
-3. **Umgebungsvariablen konfigurieren:**
+3. **Configure environment variables:**
    
-   Erstellen Sie eine `.env.local` Datei basierend auf `.env.example`:
+   Create a `.env.local` file based on `.env.example`:
    ```bash
    cp .env.example .env.local
    ```
    
-   Fügen Sie Ihren Gemini API Key hinzu (falls erforderlich):
+   Add your Gemini API Key (if required):
    ```
    NEXT_PUBLIC_MAILERLITE_API_TOKEN=your_api_token_here
    ```
 
-4. **Entwicklungsserver starten:**
+4. **Start development server:**
    ```bash
    npm run dev
    ```
    
-   Die Anwendung ist nun unter `http://localhost:3000` erreichbar.
+   The application is now accessible at `http://localhost:3000`.
 
 ### Build & Deployment
 
-#### Lokaler Build
+#### Local Build
 
 ```bash
 npm run build
 ```
 
-Dieser Befehl erstellt eine optimierte Production-Version der Anwendung im `out/` Verzeichnis.
+This command creates an optimized production version of the application in the `out/` directory.
 
-#### Production Server (lokal testen)
+#### Production Server (local testing)
 
 ```bash
 npm run start
@@ -132,48 +132,48 @@ npm run start
 
 #### GitHub Pages Deployment
 
-Die Landing Page ist für automatisches Deployment auf GitHub Pages konfiguriert. Bei jedem Push in den `main` Branch wird die Seite automatisch neu gebaut und deployed.
+The landing page is configured for automatic deployment to GitHub Pages. With every push to the `main` branch, the page is automatically rebuilt and deployed.
 
-## 📁 Projektstruktur
+## 📁 Project Structure
 
 ```
 Tara-fusion-landing-page/
 ├── app/                    # Next.js App Router
 │   ├── layout.tsx         # Root Layout
 │   ├── page.tsx           # Homepage
-│   └── privacy/           # Privacy Policy Seite
-├── components/            # Wiederverwendbare React-Komponenten
+│   └── privacy/           # Privacy Policy Page
+├── components/            # Reusable React Components
 │   ├── Footer.tsx
 │   ├── ThemeCompare.tsx
 │   └── ...
-├── sections/              # Haupt-Sektionen der Landing Page
+├── sections/              # Main sections of the landing page
 │   ├── Showcase.tsx
 │   └── ...
-├── public/                # Statische Assets
-├── .env.example           # Beispiel für Umgebungsvariablen
-├── next.config.ts         # Next.js Konfiguration
-├── tailwind.config.ts     # Tailwind CSS Konfiguration
-└── tsconfig.json          # TypeScript Konfiguration
+├── public/                # Static Assets
+├── .env.example           # Environment variables example
+├── next.config.ts         # Next.js Configuration
+├── tailwind.config.ts     # Tailwind CSS Configuration
+└── tsconfig.json          # TypeScript Configuration
 ```
 
-## 🤝 Beitragen
+## 🤝 Contributing
 
-Wir freuen uns über Beiträge zur Verbesserung der Landing Page! Bitte beachten Sie:
+We welcome contributions to improve the landing page! Please note:
 
-1. Forken Sie das Repository
-2. Erstellen Sie einen Feature-Branch (`git checkout -b feature/AmazingFeature`)
-3. Committen Sie Ihre Änderungen (`git commit -m 'Add some AmazingFeature'`)
-4. Pushen Sie zum Branch (`git push origin feature/AmazingFeature`)
-5. Öffnen Sie einen Pull Request
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 📧 Kontakt
+## 📧 Contact
 
-Für Fragen oder Feedback zu TARA Fusion, besuchen Sie bitte unsere Website oder kontaktieren Sie uns direkt.
+For questions or feedback about TARA Fusion, please visit our website or contact us directly.
 
 ---
 
-**TARA Fusion** – Sicherheit durch systematische Analyse.
+**TARA Fusion** – Security through systematic analysis.
