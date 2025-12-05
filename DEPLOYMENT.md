@@ -34,8 +34,10 @@ Die Pipeline wird automatisch ausgelöst bei:
 Nach dem ersten erfolgreichen Deployment ist deine Website verfügbar unter:
 
 ```
-https://uptux.github.io/Tara-fusion-landing-page/
+https://tara-fusion.com/
 ```
+
+Die Custom Domain ist bereits konfiguriert durch die `CNAME` Datei im `public/` Verzeichnis.
 
 ## Lokales Testen
 
@@ -54,14 +56,12 @@ npx serve out
 
 ## Troubleshooting
 
-### Assets werden nicht geladen
+### Custom Domain funktioniert nicht
 
-Stelle sicher, dass in `next.config.ts` der `basePath` und `assetPrefix` korrekt gesetzt sind:
-
-```typescript
-basePath: '/Tara-fusion-landing-page',
-assetPrefix: '/Tara-fusion-landing-page',
-```
+Stelle sicher, dass:
+1. Die `CNAME` Datei im `public/` Verzeichnis existiert und `tara-fusion.com` enthält
+2. Die DNS-Einstellungen deiner Domain korrekt auf GitHub Pages zeigen
+3. In den GitHub Repository Settings unter "Pages" die Custom Domain konfiguriert ist
 
 ### Workflow schlägt fehl
 
@@ -73,4 +73,4 @@ assetPrefix: '/Tara-fusion-landing-page',
 
 - Warte 1-2 Minuten nach dem Deployment
 - Leere den Browser-Cache
-- Stelle sicher, dass die URL den Repository-Namen enthält
+- Überprüfe, ob die Custom Domain korrekt konfiguriert ist
