@@ -2,9 +2,7 @@
 
 import React, { useState, FormEvent } from 'react';
 import Link from 'next/link';
-
-// Environment variable is embedded at build time
-const MAILERLITE_API_TOKEN = process.env.NEXT_PUBLIC_MAILERLITE_API_TOKEN;
+import { config } from '@/lib/config';
 
 type Status = 'idle' | 'loading' | 'success' | 'error';
 
@@ -32,7 +30,7 @@ const EmailSignup: React.FC = () => {
     setMessage('');
 
     try {
-      if (!MAILERLITE_API_TOKEN) {
+      if (!config.mailerliteApiToken) {
         throw new Error('Configuration error. Please contact support.');
       }
 
@@ -40,7 +38,7 @@ const EmailSignup: React.FC = () => {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer ${MAILERLITE_API_TOKEN}`,
+          'Authorization': `Bearer ${config.mailerliteApiToken}`,
         },
         body: JSON.stringify({ email }),
       });
