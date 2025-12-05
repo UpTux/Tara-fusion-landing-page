@@ -29,22 +29,28 @@ const EmailSignup: React.FC = () => {
     setMessage('');
 
     try {
-      const response = await fetch('/api/subscribe', {
+      const apiToken = process.env.NEXT_PUBLIC_MAILERLITE_API_TOKEN;
+      
+      if (!apiToken) {
+        throw new Error('Configuration error. Please contact support.');
+      }
+
+      const response = await fetch('https://connect.mailerlite.com/api/subscribers', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Authorization': `Bearer ${apiToken}`,
         },
         body: JSON.stringify({ email }),
       });
 
-      const data = await response.json();
-
       if (!response.ok) {
-        throw new Error(data.error || 'Something went wrong. Please try again.');
+        const errorData = await response.json().catch(() => ({}));
+        throw new Error(errorData.message || `Subscription failed with status ${response.status}`);
       }
 
       setStatus('success');
-      setMessage(data.message || "Thanks for your interest! We'll notify you at launch.");
+      setMessage("Thanks for your interest! We'll notify you at launch.");
       setEmail('');
     } catch (error: any) {
       setStatus('error');
