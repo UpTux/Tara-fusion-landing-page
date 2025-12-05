@@ -28,8 +28,6 @@ dist-ssr
 *.sln
 *.sw?
 
-package-lock.json
-
 .vscode/extensions.json
 
 .next/
