@@ -5,9 +5,9 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  // Uncomment if deploying to GitHub Pages with a custom base path
-  // basePath: '/your-repo-name',
-  // assetPrefix: '/your-repo-name',
+  // GitHub Pages deployment configuration
+  basePath: '/Tara-fusion-landing-page',
+  assetPrefix: '/Tara-fusion-landing-page',
 };
 
 export default nextConfig;
